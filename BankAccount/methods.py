@@ -20,8 +20,7 @@ class account():
         self.balance -= amt
         return self.balance
     
-    def transfer(self, amt, account):
+    def transfer(self, amt, acount):
         self.balance = self.balance - amt
         account.balance = account.balance + amt 
         return account.balance
-
